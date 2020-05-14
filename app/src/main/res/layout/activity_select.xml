@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.praktikum6.Select"
+    tools:targetApi="19">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="Update Data"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:fontFamily="casual"
+        tools:ignore="HardcodedText,SpUsage,Autofill"
+        tools:targetApi="19">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="ID Mahasiswa"
+            android:inputType="text|number"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,SpUsage,Autofill">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Nama Mahasiswa"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,SpUsage,Autofill">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <EditText
+            android:id="@+id/editTextJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Jurusan"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,SpUsage,Autofill">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,SpUsage,Autofill,Obsoletelayoutparams" >
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"
+        android:text="Update Mahasiswa"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,SpUsage,Autofill" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:text="Hapus Mahasiswa"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,SpUsage,Autofill" />
+
+</LinearLayout>

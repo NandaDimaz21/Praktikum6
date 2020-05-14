@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    tools:actionBarNavMode="standard"
+    tools:context="com.example.praktikum6.MainActivity"
+    tools:targetApi="19">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:fontFamily="casual"
+        android:text="CRUD Android MySQL"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText,SpUsage,Autofill" />
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Modul 6 Pemrograman Mobile"
+        android:textColor="#9affffff"
+        android:textSize="13dp"
+        tools:ignore="HardcodedText,SpUsage,Autofill">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header2"
+        android:layout_marginTop="31dp"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Masukan Nama"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,SpUsage,Autofill">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textjurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <EditText
+            android:id="@+id/editTextJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Masukan Jurusan"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,SpUsage,Autofill">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textjurusan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="Masukan Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,SpUsage,Autofill">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textemail"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"
+        android:text="Tambah Mahasiswa"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,SpUsage,Autofill" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:text="Daftar Mahasiswa"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,SpUsage,Autofill" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif"
+        android:text="© 2020 Nanda"
+        android:textColor="#9affffff"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText,SpUsage,Autofill" />
+
+</RelativeLayout>

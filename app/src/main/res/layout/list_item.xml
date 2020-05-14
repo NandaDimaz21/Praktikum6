@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:targetApi="19">
+
+    <ImageView
+        android:id="@+id/edu"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/lytid"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/edu"
+        android:orientation="horizontal"
+        tools:targetApi="19">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytnama"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/lytid"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:targetApi="19">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>
